@@ -14,18 +14,17 @@ profiles::bootstrap::accounts::sudo_confs:
   rundeck-puppet:
     content: '%VmGIeyg0Dy ALL=NOPASSWD: /opt/puppetlabs/bin/puppet agent'
     priority: 99
+profiles::bootstrap::dnsmasq: true
 profiles::bootstrap::dnsmasq::forward_consul: true
 profiles::bootstrap::example: true
 profiles::bootstrap::example::: true
 profiles::bootstrap::fail2ban: true
 profiles::bootstrap::firewall: true
-profiles::bootstrap::locales: true
-profiles::bootstrap::locales::locales:
-  - "en_US.UTF-8 UTF-8"
-  - "en_GB.UTF-8 UTF-8"
 profiles::bootstrap::network: true
 profiles::bootstrap::ntp: true
 profiles::bootstrap::puppet: true
+profiles::bootstrap::repos: true
+profiles::bootstrap::repositories::epel: true
 profiles::bootstrap::resolv: true
 profiles::bootstrap::resolv::name_servers:
   - 10.0.2.3
