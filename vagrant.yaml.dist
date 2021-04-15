@@ -1,12 +1,15 @@
 ---
+required_plugins:
+    - vagrant-hostmanager
+    - vagrant-puppet-install
 nodes:
     - name: centos7
       hostname: centos7.example.vagrant
-      box: bento/centos-7.8
+      box: bento/centos-7.9
       ip: 192.168.42.42
     - name: centos8
       hostname: centos8.example.vagrant
-      box: bento/centos-8.2
+      box: bento/centos-8.3
       ip: 192.168.42.43
     - name: debian9
       hostname: debian9.example.vagrant
@@ -24,5 +27,5 @@ nodes:
       hostname: ubuntu2004.example.vagrant
       box: bento/ubuntu-20.04
       ip: 192.168.42.47
-puppet_version: 6.19.1
+puppet_version: 6.21.0
 virtualbox_group: '/Vagrant/example'
