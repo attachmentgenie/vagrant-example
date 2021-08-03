@@ -11,5 +11,5 @@ nodes:
       hostname: centos8.example.vagrant
       box: bento/centos-8.3
       ip: 192.168.42.43
-puppet_version: 6.21.1
+puppet_version: 6.24.0
 virtualbox_group: '/Vagrant/example'
